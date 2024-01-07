@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">designAscreen</string>
+    <string name="header">ولو آية</string>
+    <string name="UserImage">صورة المستخدم</string>
+    <string name="UserName">اسم المستخدم</string>
+    <string name="pages">604 صفحة</string>
+    <string name="finish">1 ختمة</string>
+    <string name="searchForAGroup">ابحث عن مجموعة !</string>
+    <string name="search">ادخل رقم المجموعة</string>
+    <string name="information">ادخل رقم المجموعة للبحث وطلب الدعم من أدمن المجموعة</string>
+    <string name="newGroup">مجموعة جديدة</string>
+</resources>

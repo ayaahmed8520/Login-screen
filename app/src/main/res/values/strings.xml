@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">designAscreen</string>
+    <string name="header">ولو آية</string>
+    <string name="UserImage">user Image</string>
+    <string name="UserName">User Name</string>
+    <string name="pages">604 Pages</string>
+    <string name="finish">1 Finished</string>
+    <string name="searchForAGroup">Search For a Group!</string>
+    <string name="search">Enter a Group ID</string>
+    <string name="information">Enter the group ID to search and request support from the group admin.</string>
+    <string name="newGroup">Create a New Group</string>
+</resources>

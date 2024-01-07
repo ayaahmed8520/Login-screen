@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/gray">
+
+    <TextView
+        android:id="@+id/textView_AppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/header"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_userImage"
+        app:layout_constraintStart_toStartOf="@+id/imageView_userImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_userImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/image_background"
+        android:contentDescription="@string/UserImage"
+        app:layout_constraintEnd_toEndOf="@+id/editText_search"
+        app:layout_constraintStart_toStartOf="@+id/editText_search"
+        app:layout_constraintTop_toBottomOf="@+id/textView_AppName"
+        app:srcCompat="@drawable/man2"
+        android:padding="2dp"/>
+
+    <TextView
+        android:id="@+id/textView_userName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="@string/UserName"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_userImage"
+        app:layout_constraintStart_toStartOf="@+id/imageView_userImage"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_userImage" />
+
+    <Button
+        android:id="@+id/button_pagesNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="56dp"
+        android:backgroundTint="@color/dark_pink"
+        android:text="@string/pages"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_finish"
+        app:layout_constraintTop_toTopOf="@+id/button_finish" />
+
+    <Button
+        android:id="@+id/button_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="19dp"
+        android:backgroundTint="@color/dark_pink"
+        android:text="@string/finish"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_userName" />
+
+    <TextView
+        android:id="@+id/textView_search"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="75dp"
+        android:gravity="center"
+        android:text="@string/searchForAGroup"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_pagesNumber" />
+
+    <EditText
+        android:id="@+id/editText_search"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="30dp"
+        android:autofillHints="Search"
+        android:background="@drawable/edittext_background"
+        android:drawableStart="@drawable/baseline_screen_search_desktop_24"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="@string/search"
+        android:textColorHint="@color/dark_pink"
+        android:inputType="number"
+        android:padding="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_search" />
+
+
+    <TextView
+        android:id="@+id/textView_hint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:hint="@string/information"
+        android:textColorHint="@color/white88"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/editText_search"
+        app:layout_constraintStart_toStartOf="@+id/editText_search"
+        app:layout_constraintTop_toBottomOf="@+id/editText_search" />
+
+    <TextView
+        android:id="@+id/textView_newGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:text="@string/newGroup"
+        android:textColor="@color/dark_blue"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView_hint"
+        app:layout_constraintStart_toStartOf="@+id/textView_hint"
+        app:layout_constraintTop_toBottomOf="@+id/textView_hint" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
